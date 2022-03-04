@@ -95,7 +95,7 @@ const AppTextInput: React.FC<AppTextInputProps> = props => {
             ]}>
             <Image
               source={
-                secureText ? PASSWORD_EYE_OPEN_ICON : PASSWORD_EYE_CLOSED_ICON
+                secureText ? PASSWORD_EYE_CLOSED_ICON : PASSWORD_EYE_OPEN_ICON
               }
               style={styles.icon}
             />
