@@ -1,6 +1,7 @@
 import {ImageSourcePropType, View} from 'react-native';
 import React from 'react';
-import {AppTextInput} from './components';
+import {AppButton, AppTextInput} from './components';
+import {Colors} from './constants';
 
 const EMAIL_ICON: ImageSourcePropType = {
   uri: 'https://img.icons8.com/material-outlined/24/000000/mail.png',
@@ -18,7 +19,7 @@ const App = () => {
         containerStyle={{width: '80%', alignSelf: 'center', borderWidth: 0}}
         inputContainerStyle={{
           borderWidth: 1,
-          borderColor: '#ccc',
+          borderColor: Colors.mediumGray,
           borderRadius: 12,
         }}
         multiline
@@ -37,10 +38,18 @@ const App = () => {
         }}
         inputContainerStyle={{
           borderWidth: 1,
-          borderColor: '#ccc',
+          borderColor: Colors.mediumGray,
           borderRadius: 12,
         }}
         style={{borderWidth: 0}}
+      />
+
+      <AppButton
+        title="Click here to get the token"
+        titleStyle={{fontSize: 16, fontWeight: 'bold'}}
+        borderColor={Colors.mediumGray}
+        backGroundColor={'gold'}
+        buttonStyle={{width: '70%', marginTop: 16}}
       />
     </View>
   );
