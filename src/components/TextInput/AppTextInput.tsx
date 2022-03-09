@@ -68,7 +68,11 @@ const AppTextInput: React.FC<AppTextInputProps> = props => {
         <TextInput
           {...props}
           secureTextEntry={secureText}
-          style={[{flex: 1}, props.style]}
+          style={[
+            {flex: 1},
+            !props.iconRight && !props.secureTextEntry && {paddingRight: 12},
+            props.style,
+          ]}
         />
 
         {/* Right Icon  */}
