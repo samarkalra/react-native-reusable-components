@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import React, {Ref, useEffect, useState} from 'react';
 import styles from './styles';
+import {Colors} from '../../constants';
 
 // containerStyle prop handles the main container's styles
 // inputContainerStyle prop handles (text input, left icon and right icon) container styles
@@ -69,7 +70,7 @@ const AppTextInput: React.FC<AppTextInputProps> = props => {
           {...props}
           secureTextEntry={secureText}
           style={[
-            {flex: 1},
+            {flex: 1, color: Colors.black},
             !props.iconRight && !props.secureTextEntry && {paddingRight: 12},
             props.style,
           ]}
