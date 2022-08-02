@@ -17,6 +17,7 @@ const App = () => {
         placeholder="Email"
         placeholderTextColor={Colors.mediumGray}
         iconLeft={EMAIL_ICON}
+        keyboardType="email-address"
         containerStyle={{width: '80%', alignSelf: 'center', borderWidth: 0}}
         inputContainerStyle={{
           borderWidth: 1,
