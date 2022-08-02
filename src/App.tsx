@@ -22,7 +22,6 @@ const App = () => {
           borderColor: Colors.mediumGray,
           borderRadius: 12,
         }}
-        multiline
         style={{borderWidth: 0}}
       />
 
