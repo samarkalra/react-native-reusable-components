@@ -15,7 +15,9 @@ const App = () => {
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <AppTextInput
         placeholder="Email"
+        placeholderTextColor={Colors.mediumGray}
         iconLeft={EMAIL_ICON}
+        keyboardType="email-address"
         containerStyle={{width: '80%', alignSelf: 'center', borderWidth: 0}}
         inputContainerStyle={{
           borderWidth: 1,
@@ -27,6 +29,7 @@ const App = () => {
 
       <AppTextInput
         placeholder="Password"
+        placeholderTextColor={Colors.mediumGray}
         iconLeft={PASSWORD_ICON}
         secureTextEntry={true}
         containerStyle={{
