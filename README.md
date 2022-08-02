@@ -35,6 +35,8 @@ Note:
 |`titleStyle`     | sets title text styles              | No       |
 |`backgroundColor`| sets the background color of button | No       |
 |`borderColor`    | sets the border color of button     | No       |
+|`buttonStyle`    | ViewStyle for pressable.            | No       |
+
 		
 		
 		
